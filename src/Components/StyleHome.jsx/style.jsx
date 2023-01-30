@@ -26,5 +26,3 @@ export const ContainerHeader = styled.div`
     height:15% ;
     border-bottom: solid 1px #747474;
 `
-
-// rqrwsadsadda teste 
