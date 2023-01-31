@@ -6,6 +6,7 @@ const HomeStyle = () => {
     <ContainerCorpo>
     <ContainerDescripton> 
         <h1>Sobre nós</h1>
+        <br></br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
          Ducimus corporis earum et sed quo adipisci, molestiae, 
          ea totam laudantium corrupti architecto tempore reprehenderit 

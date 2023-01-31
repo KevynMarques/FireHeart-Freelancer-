@@ -1,42 +1,61 @@
 import { useState } from 'react'
-import  { ButtonsHeader, ContainerBase, ContainerHeader, ContainerPrincipal } from '../Components/Style'
+import { ButtonsHeader, ContainerBase, ContainerHeader, ContainerPrincipal, StyleButton } from '../Components/Style'
 import HomeComp from "../Components/HomeComp"
 import Ninhadas from '../Components/Ninhadas'
+import Galeria from '../Components/Galeria'
+import Contato from "../Components/Contato"
 
 
-export default function Home() { 
+export default function Home() {
 
-const [newState, setNewState] = useState(<HomeComp/>)
+     const [newState, setNewState] = useState(<HomeComp />)
+     const [ativo, setAtivo] = useState("FireHeart")
 
 
 
-const teste = () =>{ 
+     return (
 
-}
-  return ( 
-    <>
-    <ContainerBase>
-      <ContainerPrincipal>
-          <ContainerHeader>
-             <ButtonsHeader>
-                  <button
-                   onClick={teste}
-                    >FireHeart</button>
-             </ButtonsHeader>
-             <ButtonsHeader>
-                  <button>Ninhadas</button>
-             </ButtonsHeader>
-             <ButtonsHeader>
-                  <button>Galeria</button>
-             </ButtonsHeader>
-             <ButtonsHeader>
-                  <button>Contatos</button>
-             </ButtonsHeader>
-          </ContainerHeader> 
-            {newState}
-      </ContainerPrincipal>
-    </ContainerBase>
-  
-    </> 
-  )
+          <>
+               <ContainerBase>
+                    <ContainerPrincipal>
+                         <ContainerHeader>
+                              <StyleButton  
+                                   onClick={()=>{
+                                     setNewState(<HomeComp />)
+                                     setAtivo("FireHeart")    
+                                   }}
+                                   ativo={ativo === "FireHeart" ? true : false } >
+                                   FireHeart
+                              </StyleButton>
+                              <StyleButton
+                              onClick={()=>{
+                                   setNewState(<Ninhadas />)
+                                   setAtivo("ninhada")    
+                                 }}
+                              ativo={ativo === "ninhada" ? true : false }>
+                                   Ninhadas
+                              </StyleButton>
+                              <StyleButton 
+                              onClick={()=>{
+                                   setNewState(<Galeria />)
+                                   setAtivo("Galeria")    
+                                 }}
+                               ativo={ativo === "Galeria" ? true : false }>
+                                   Galeria
+                              </StyleButton>
+                              <StyleButton
+                              onClick={()=>{
+                                   setNewState(<Contato />)
+                                   setAtivo("Contato")    
+                                 }}
+                              ativo={ativo === "Contato" ? true : false }>
+                                   Contato
+                              </StyleButton>
+                         </ContainerHeader>
+                         {newState}
+                    </ContainerPrincipal>
+               </ContainerBase>
+
+          </>
+     )
 }

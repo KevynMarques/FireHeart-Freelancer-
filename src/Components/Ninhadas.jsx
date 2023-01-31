@@ -6,7 +6,8 @@ const Ninhadas = () => {
     <ContainerCorpo>
     <ContainerDescripton>
     <h1>Proximas Ninhadas</h1> 
-    <p>
+    <p> 
+      <br></br>
      Fireheart.dogs vem anunciar a ninhada de
      cães da linhagem do KNPV Macho - Zeldris (BRN 40678) x 
       Fêmea importada da Holanda - Tessa (BRN 26084), ambos os cães com uma ótima caça , 

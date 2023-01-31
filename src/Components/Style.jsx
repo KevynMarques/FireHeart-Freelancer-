@@ -6,6 +6,7 @@ import Tessa from "../Assets/images/Tessa.jpg"
 import KNPV from "../Assets/images/MaliKNPV.jpg"
 
 
+
 export const ContainerBase = styled.div`
 width: 100vw;
 height: 100vh; 
@@ -35,31 +36,26 @@ export const ContainerHeader = styled.div`
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
-`
+` 
 
-
-export const ButtonsHeader = styled.div`
-
-    button { 
-   @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+export const StyleButton = styled.button`
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     font-family: 'Pacifico', cursive; 
     width: 150px;
     border:none;
     font-size: 16px;
+    background-color: #525252;
     color: #0bddba; 
-    border-radius: 5px;
-    background-color: #3e3f3f;
+    border-radius: 10px;
     padding: 10px; 
-    cursor: pointer;  
-    border: solid 4px ${props => props.ativo ? "088b76" : "black"};
+    cursor: pointer;   
+    border: solid 6px  ${props => props.ativo === true ? "#0bddba" : "#0000000"};
 
     &:Hover {
        border: solid 4px #088b76;
-     } 
+     }   
+`
 
-   
-    } 
-` 
 
 export const ContainerCorpo = styled.div`
 display: flex;
