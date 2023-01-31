@@ -1,5 +1,7 @@
 import React from 'react'
-import { ContainerDescripton, ContainerImgLeft, ContainerImgRight, ContainerParents, ContainerCorpo } from './Style'
+import { ContainerDescripton, ContainerImgLeft,
+   ContainerImgRight, ContainerParents, 
+   ContainerCorpo } from './Style'
 
 const Ninhadas = () => {
   return ( 
