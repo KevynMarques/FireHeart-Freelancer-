@@ -5,10 +5,12 @@ const Contato = () => {
   return (
     <ContainerCorpo>
     <ContainerDescripton>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-       Minus amet id molestiae corporis dignissimos
-        earum facere quam suscipit, magnam ea omnis exercitationem 
-        temporibus dolorum ipsa molestias ipsum, quasi provident adipisci!
+        <h1>Contatos :</h1>
+        <br>
+        </br>
+        <p>email : gMatheusmendesnascimento@gamil.com</p>
+         <br></br>
+        <p>Celeular e WhatsApp : 11 99746-9033</p>
     </ContainerDescripton>
     </ContainerCorpo>
   )
