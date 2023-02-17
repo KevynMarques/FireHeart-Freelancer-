@@ -4,7 +4,7 @@ import { ContainerCorpo, ContainerDescripton, ImageKNPV } from './Style'
 const HomeStyle = () => {
   return ( 
     <ContainerCorpo>
-    <ContainerDescripton> 
+    <ContainerDescripton className="DescHome"> 
         <h1>Sobre nós</h1>
         <br></br>
         O canil coração de fogo é especializado em cães policiais e cães de 
@@ -17,7 +17,7 @@ const HomeStyle = () => {
          (https://www.bloedlijnen.nl/) para melhor controle genético e
           conhecimento dos ancestrais e descendentes.
     </ContainerDescripton> 
-      <ImageKNPV />
+      <ImageKNPV  className='IMGKNPV'/>
     </ContainerCorpo> 
   )
 } 

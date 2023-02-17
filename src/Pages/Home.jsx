@@ -19,7 +19,8 @@ export default function Home() {
                <ContainerBase>
                     <ContainerPrincipal>
                          <ContainerHeader>
-                              <StyleButton  
+                              
+                              <StyleButton  className='Home'
                                    onClick={()=>{
                                      setNewState(<HomeComp />)
                                      setAtivo("FireHeart")    
@@ -27,23 +28,26 @@ export default function Home() {
                                    ativo={ativo === "FireHeart" ? true : false } >
                                    FireHeart
                               </StyleButton>
-                              <StyleButton
+
+                              <StyleButton className='Ninhada'
                               onClick={()=>{
                                    setNewState(<Ninhadas />)
                                    setAtivo("ninhada")    
                                  }}
                               ativo={ativo === "ninhada" ? true : false }>
                                    Ninhadas
-                              </StyleButton>
-                              <StyleButton 
+                              </StyleButton> 
+
+                              <StyleButton className='Galeria' 
                               onClick={()=>{
                                    setNewState(<Galeria />)
                                    setAtivo("Galeria")    
                                  }}
                                ativo={ativo === "Galeria" ? true : false }>
                                    Galeria
-                              </StyleButton>
-                              <StyleButton
+                              </StyleButton> 
+
+                              <StyleButton className='Contato'
                               onClick={()=>{
                                    setNewState(<Contato />)
                                    setAtivo("Contato")    

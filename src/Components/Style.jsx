@@ -20,7 +20,15 @@ background-image: url(${Wallpaper});
 background-size: cover;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: center; 
+
+@media screen and (max-width: 820px) {
+    background-image: none;
+    background: rgb(135,138,156);
+    background: radial-gradient(circle, rgba(135,138,156,1) 0%, rgba(0,0,0,1) 100%);
+    height: 100%;
+    width: 100%;
+      }
 `;
 
 export const ContainerPrincipal = styled.div `
@@ -30,7 +38,15 @@ border-radius: 15px;
 border: solid 7px  #5f737e;
 background-image: url(${WallpaperMali});
 background-position: auto;
-padding: 15px; 
+padding: 15px;  
+
+@media screen and (max-width: 820px) {
+     height: 2000px;
+     width: 90%;
+     margin-top: 25px;
+     background-image: url(${WallpaperMali}), left: 10px;
+      }
+
 `
 
 export const ContainerHeader = styled.div`
@@ -42,6 +58,42 @@ export const ContainerHeader = styled.div`
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+
+    @media screen and (max-width: 820px) {
+        height: 05%;
+      }
+ 
+    .Home {
+
+        @media screen and (max-width: 820px) {
+        width: auto;
+        font-size: 20px;
+      }
+
+      } 
+
+    .Ninhada {
+      @media screen and (max-width: 820px) {
+        visibility: hidden;
+      }
+    }
+
+    .Galeria {
+      @media screen and (max-width: 820px) {
+        visibility: hidden;
+        position: absolute;
+      }
+    }
+
+    
+    .Contato {
+      @media screen and (max-width: 820px) {
+        visibility: hidden;
+        position: absolute;
+      }
+    }
+    
+
 ` 
 
 export const StyleButton = styled.button`
@@ -55,11 +107,16 @@ export const StyleButton = styled.button`
     border-radius: 10px;
     padding: 10px; 
     cursor: pointer;   
-    border: solid 6px  ${props => props.ativo === true ? "#0bddba" : "#0000000"};
+    border: solid 6px  ${props => props.ativo === true ? "#0bddba" : "#0000000"};  
+
+    @media screen and (max-width: 820px) {
+        margin-top: 0px;
+      }
 
     &:Hover {
        border: solid 4px #088b76;
-     }   
+     }    
+      
 `
 
 
@@ -68,6 +125,15 @@ display: flex;
 justify-content: space-between;
 width: 100%;
 height: 80%;
+
+.DescHome {
+    @media screen and (max-width: 820px) {
+     height: auto;
+     width: 80%; 
+     position: absolute;
+     padding: 10px;
+      }
+   }
 `
 
 export const ContainerDescripton = styled.div` 
@@ -83,10 +149,32 @@ export const ContainerDescripton = styled.div`
     h1 {
         text-align: center; 
     }
-    p {
+    p { 
+        margin-top: 30px;
         text-align: center;
-    }
+        align-items: center;
+    }  
+ 
+  
 `
+export const ContainerSVG = styled.div `
+   height: 50px;
+   display: flex;
+   align-items: center;
+   margin-top: 50px;
+
+  svg {
+      font-size: 40px;
+      margin-right: 10px;
+    }
+  
+    p { 
+        margin-top: 0px;
+        text-align: center;
+        align-items: center;
+    } 
+`
+
 
 export const ContainerParents = styled.div`
  background-color: #7a7a7ab7;
@@ -139,7 +227,16 @@ export const ImageKNPV = styled.div`
     height: 100%;
     padding: 20px;
     border-radius: 10px;   
-    background-image: url(${KNPV});
+    background-image: url(${KNPV}); 
+
+    @media screen and (max-width: 820px) {
+        width: 100%;
+        height: 500px;
+        margin-top: 550PX;
+        size: -10px;
+      }
+
+ 
 ` 
  
 export const CorpoGaleria = styled.div`
