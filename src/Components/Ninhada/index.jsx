@@ -1,12 +1,12 @@
 import React from 'react'
-import { ContainerDescripton, ContainerImgLeft,
-   ContainerImgRight, ContainerParents, 
-   ContainerCorpo } from './Style'
+import { ContainerBodyGlobal, ContainerDescGlobal } from '../Body/Global'
+import { ContainerImgLeft,
+   ContainerImgRight, ContainerParents, } from '../Style'
 
 const Ninhadas = () => {
   return ( 
-    <ContainerCorpo>
-    <ContainerDescripton>
+    <ContainerBodyGlobal>
+    <ContainerDescGlobal>
     <h1>Proximas Ninhadas</h1> 
     <p> 
       <br></br>
@@ -19,12 +19,12 @@ const Ninhadas = () => {
       filhotes atuando em atividade policiais reais. Uma otima abertura de sangue de dutch headers 
       com musculatura e temperamento diferenciados.
     </p>
-    </ContainerDescripton>  
+    </ContainerDescGlobal>  
     <ContainerParents>
         <ContainerImgLeft><p>Pai</p></ContainerImgLeft>
         <ContainerImgRight><p>Mãe</p></ContainerImgRight>
     </ContainerParents>
-    </ContainerCorpo>
+    </ContainerBodyGlobal>
   )
 }
 

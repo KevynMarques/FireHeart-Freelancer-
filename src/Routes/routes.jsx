@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../Pages/Home";
+import Main from "../Pages/Main";
 
 export const Rotas =  () => {
   return (
     <>
     <BrowserRouter >
     <Routes >
-      <Route path="/" element={<Home />} /> 
+      <Route path="/" element={<Main />} /> 
     </Routes>
     </BrowserRouter>
     </>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { ContainerGaleria, ContainerTessa,
  ContainerTessaIMG2, CorpoGaleria, ContainerTessaIMG3,
-  ContainerTessaIMG4, ContainerZeldris, ContainerZeldrisIMG2,  ContainerZeldrisIMG3, ContainerZeldrisIMG4 } from './Style'
+  ContainerTessaIMG4, ContainerZeldris, ContainerZeldrisIMG2,  ContainerZeldrisIMG3, ContainerZeldrisIMG4 } from '../Style'
 
 const Galeria = () => {
   return (
